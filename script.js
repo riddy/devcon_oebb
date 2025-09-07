@@ -83,12 +83,12 @@ function activateEasterEgg() {
 
     // Show secret message with dad joke
     const itJokes = [
-    "Why do programmers always mix up Halloween and Christmas? Because Oct 31 == Dec 25. 🎃🎄",
-    "Why did the programmer quit his job? Because he didn’t get arrays. 😕🧮",
-    "Why did the JavaScript developer leave the restaurant? Because he couldn’t ‘callback’ the waiter! 🍽️📞",
-    "There are 10 types of people in the world: those who understand binary and those who don’t. 💻🔢",
-    "How many programmers does it take to change a lightbulb? None, that’s a hardware problem. 💡🧑‍💻",
-    "A SQL query walks into a bar, walks up to two tables and asks, ‘Can I join you?’ 🍻🗃️"
+        "Why do programmers always mix up Halloween and Christmas? Because Oct 31 == Dec 25. 🎃🎄",
+        "Why did the programmer quit his job? Because he didn’t get arrays. 😕🧮",
+        "Why did the JavaScript developer leave the restaurant? Because he couldn’t ‘callback’ the waiter! 🍽️📞",
+        "There are 10 types of people in the world: those who understand binary and those who don’t. 💻🔢",
+        "How many programmers does it take to change a lightbulb? None, that’s a hardware problem. 💡🧑‍💻",
+        "A SQL query walks into a bar, walks up to two tables and asks, ‘Can I join you?’ 🍻🗃️"
     ];
 
     const randomJoke = dadJokes[Math.floor(Math.random() * dadJokes.length)];
@@ -206,12 +206,12 @@ function showNotification(message) {
     }, 2000);
 }
 
-// Register button functionality
-document.getElementById('registerBtn').addEventListener('click', (e) => {
-    e.preventDefault();
+// Registration URL - update this when you have the actual link
+const REGISTRATION_URL = 'https://your-registration-link.com';
 
-    // Replace this URL with your actual registration link
-    const registrationUrl = 'https://your-registration-link.com';
+// Register button functionality
+function handleRegistration(e) {
+    e.preventDefault();
 
     // Show a fun loading message first
     const btn = e.target.closest('.register-btn');
@@ -222,7 +222,7 @@ document.getElementById('registerBtn').addEventListener('click', (e) => {
 
     setTimeout(() => {
         // Uncomment the next line and add your registration URL
-        // window.open(registrationUrl, '_blank');
+        // window.open(REGISTRATION_URL, '_blank');
 
         // For demo purposes, show a message
         showNotification('Registration link would open here! 🚀');
@@ -230,7 +230,11 @@ document.getElementById('registerBtn').addEventListener('click', (e) => {
         btn.querySelector('.btn-text').innerHTML = originalText;
         btn.style.pointerEvents = 'auto';
     }, 1500);
-});
+}
+
+// Add event listeners to both register buttons
+document.getElementById('registerBtn').addEventListener('click', handleRegistration);
+document.getElementById('heroRegisterBtn').addEventListener('click', handleRegistration);
 
 // Terminal typing effect
 function typeInTerminal() {

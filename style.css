@@ -1,3 +1,9 @@
+.namingidee{
+    /* [ÖBB:]ably */
+    color: #E2001A;
+    font-family: 'JetBrains Mono', monospace;
+}
+
 :root {
     --primary-color: #00ff41;
     --secondary-color: #ff6b35;
@@ -186,6 +192,39 @@ body {
     font-size: 0.8rem;
     color: var(--primary-color);
     margin: 40px 0;
+}
+
+.hero-cta {
+    margin-top: 40px;
+}
+
+.hero-register-btn {
+    display: inline-block;
+    background: linear-gradient(45deg, var(--oebb-red), var(--oebb-dark-red));
+    color: white;
+    padding: 18px 45px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    margin: 20px 0;
+    border: 2px solid transparent;
+    box-shadow: 0 4px 15px rgba(227, 6, 19, 0.3);
+}
+
+.hero-register-btn:hover {
+    transform: scale(1.05);
+    border-color: var(--primary-color);
+    box-shadow: 0 6px 25px rgba(227, 6, 19, 0.5);
+}
+
+.hero-register-note {
+    font-family: 'JetBrains Mono', monospace;
+    margin-top: 15px;
+    font-size: 0.9rem;
 }
 
 /* Event Info */
