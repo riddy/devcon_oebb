@@ -91,7 +91,7 @@ function activateEasterEgg() {
         "A SQL query walks into a bar, walks up to two tables and asks, ‘Can I join you?’ 🍻🗃️"
     ];
 
-    const randomJoke = dadJokes[Math.floor(Math.random() * dadJokes.length)];
+    const randomJoke = itJokes[Math.floor(Math.random() * itJokes.length)];
 
     const message = document.createElement('div');
     message.innerHTML = `
@@ -233,8 +233,30 @@ function handleRegistration(e) {
 }
 
 // Add event listeners to both register buttons
+function handleHeroRegistration(e) {
+    e.preventDefault();
+
+    // Show a fun loading message first
+    const btn = e.target.closest('.hero-register-btn');
+    const originalText = btn.querySelector('.btn-text').innerHTML;
+
+    btn.querySelector('.btn-text').innerHTML = '<code>git push origin registration...</code>';
+    btn.style.pointerEvents = 'none';
+
+    setTimeout(() => {
+        // Uncomment the next line and add your registration URL
+        // window.open(REGISTRATION_URL, '_blank');
+
+        // For demo purposes, show a message
+        showNotification('Registration link would open here! 🚀');
+
+        btn.querySelector('.btn-text').innerHTML = originalText;
+        btn.style.pointerEvents = 'auto';
+    }, 1500);
+}
+
 document.getElementById('registerBtn').addEventListener('click', handleRegistration);
-document.getElementById('heroRegisterBtn').addEventListener('click', handleRegistration);
+document.getElementById('heroRegisterBtn').addEventListener('click', handleHeroRegistration);
 
 // Terminal typing effect
 function typeInTerminal() {

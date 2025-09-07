@@ -6,7 +6,7 @@
 
 :root {
     --primary-color: #00ff41;
-    --secondary-color: #ff6b35;
+    --secondary-color: #e2002a;
     --bg-dark: #0d1117;
     --bg-darker: #010409;
     --text-light: #f0f6fc;
@@ -16,8 +16,8 @@
     --terminal-bg: #0c1116;
     
     /* ÖBB Brand Colors */
-    --oebb-red: #e30613;
-    --oebb-dark-red: #b8050f;
+    --oebb-red: #e2002a;
+    --oebb-dark-red: #ab0020;
     --oebb-gray: #58595b;
     --oebb-light-gray: #f5f5f5;
 }
@@ -77,7 +77,7 @@ body {
     border-radius: 50%;
 }
 
-.btn.close { background: #ff5f57; }
+.btn.close { background: var(--oebb-red); }
 .btn.minimize { background: #ffbd2e; }
 .btn.maximize { background: #28ca42; }
 
@@ -166,7 +166,7 @@ body {
 
 .glitch::before {
     animation: glitch-1 2s infinite;
-    color: var(--primary-color);
+    color: var(--oebb-dark-red);
     z-index: -1;
 }
 
@@ -217,7 +217,7 @@ body {
 
 .hero-register-btn:hover {
     transform: scale(1.05);
-    border-color: var(--primary-color);
+    border-color: var(--oebb-dark-red);
     box-shadow: 0 6px 25px rgba(227, 6, 19, 0.5);
 }
 
@@ -375,7 +375,7 @@ body {
 
 .register-btn:hover {
     transform: scale(1.05);
-    border-color: var(--oebb-red);
+    border-color: var(--oebb-gray);
     box-shadow: 0 0 20px rgba(227, 6, 19, 0.3);
 }
 
