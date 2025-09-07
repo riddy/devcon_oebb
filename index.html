@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÖBB Tech Community - First Meetup</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="terminal-window">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <span class="btn close"></span>
+                <span class="btn minimize"></span>
+                <span class="btn maximize"></span>
+            </div>
+            <div class="terminal-title">oebb-tech@community:~$</div>
+        </div>
+        <div class="terminal-body">
+            <div class="loading-sequence">
+                <div class="line">$ ./bootstrap_community.sh</div>
+                <div class="line delay-1">Loading ÖBB engineers... ████████████ 100%</div>
+                <div class="line delay-2">Setting up barcamp sessions... ████████████ 100%</div>
+                <div class="line delay-3">Brewing coffee & preparing snacks... ████████████ 100%</div>
+                <div class="line delay-4 success">✓ Community event ready to launch!</div>
+            </div>
+        </div>
+    </div>
+
+    <header class="hero">
+        <div class="container">
+            <div class="glitch-wrapper">
+                <h1 class="glitch" data-text="ÖBB Tech Community">ÖBB Tech Community</h1>
+            </div>
+            <p class="tagline">
+                <span class="code-comment">// Grassroots. Engineers. Innovation. Community.</span>
+            </p>
+            <div class="ascii-art">
+                <pre>
+    ╔══════════════════════════════════════╗
+    ║  function firstMeetup() {            ║
+    ║    const community = new ÖBBTech();  ║
+    ║    community.connect();              ║
+    ║    community.share();                ║
+    ║    community.innovate();             ║
+    ║    return AWESOME_FUTURE;            ║
+    ║  }                                   ║
+    ╚══════════════════════════════════════╝
+                </pre>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="event-info">
+            <div class="code-block">
+                <div class="code-header">
+                    <span class="filename">event_details.json</span>
+                    <div class="code-actions">
+                        <span class="copy-btn" onclick="copyToClipboard()">📋</span>
+                    </div>
+                </div>
+                <pre class="code-content">
+{
+  "event": "ÖBB Tech Community - First Meetup",
+  "date": "2024-10-24",
+  "time": "09:00 - 12:00",
+  "location": "Open Innovation Factory",
+  "format": "hybrid_barcamp",
+  "keynote_speaker": {
+    "name": "Georg Grütter",
+    "topic": "InnerSource",
+    "bio": "InnerSource evangelist and Developer Advocate at Robert Bosch. Co-founded the first InnerSource community at Bosch in 2009 and co-founded the InnerSource Commons Foundation in 2020."
+  },
+  "agenda": {
+    "09:00-09:30": "Keynote: InnerSource by Georg Grütter",
+    "09:30-11:30": "Barcamp Sessions (you decide the topics!)",
+    "11:30-12:00": "Wrap-up & Next Steps",
+    "12:00+": "Optional: Stay & work together"
+  },
+  "for_all": [
+    "Software Developers", "Testers", "SREs",
+    "Cloud Engineers", "Backend Devs", "Frontend Devs",
+    "DevOps", "Platform Engineers", "QA", "Architects"
+  ],
+  "what_we_provide": {
+    "coffee": "premium_quality",
+    "snacks": "energizing_treats",
+    "wifi": "enterprise_grade",
+    "workspace": "collaborative_afternoon",
+    "community": "grassroots_organized"
+  },
+  "bring_yourself": {
+    "curiosity": "required",
+    "ideas": "highly_welcome",
+    "laptop": "optional_for_afternoon",
+    "openness": "to_new_connections"
+  }
+}
+                </pre>
+            </div>
+        </section>
+
+        <section class="highlights">
+            <h2>
+                <span class="code-comment">/* Why join our community? */</span>
+            </h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🌱</div>
+                    <h3>Grassroots Community</h3>
+                    <p>Built by engineers, for engineers. This is our first meetup - help shape what comes next!</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Barcamp Style</h3>
+                    <p>You decide the topics! Bring your challenges, ideas, and expertise to share</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">☕</div>
+                    <h3>Coffee & Snacks</h3>
+                    <p>Premium fuel for premium minds. Network over quality refreshments</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚂</div>
+                    <h3>ÖBB Engineering</h3>
+                    <p>Connect with fellow ÖBB engineers across all disciplines and teams</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💻</div>
+                    <h3>Afternoon Workspace</h3>
+                    <p>Stay after lunch and work together in the Innovationfactory</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔧</div>
+                    <h3>All Disciplines Welcome</h3>
+                    <p>Frontend, Backend, Cloud, SRE, Testing, DevOps - everyone's expertise matters</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="console-output">
+                <div class="console-line">
+                    <span class="prompt">engineer@oebb:~$</span>
+                    <span class="command">join_community --first-meetup</span>
+                </div>
+                <div class="console-line output">
+                    <span class="success">✓ Welcome to the ÖBB Tech Community!</span>
+                </div>
+            </div>
+
+            <a href="#" class="register-btn" id="registerBtn">
+                <span class="btn-text">
+                    <code>community.join() // Let's build this together!</code>
+                </span>
+                <div class="btn-hover-effect"></div>
+            </a>
+
+            <p class="register-note">
+                <span class="code-comment">// First meetup = founding member status 🚀</span>
+            </p>
+        </section>
+
+        <section class="keynote-info">
+            <div class="keynote-speaker">
+                <h3>🎤 Keynote Speaker</h3>
+                <div class="speaker-card">
+                    <div class="speaker-details">
+                        <h4>Georg Grütter</h4>
+                        <h5>"InnerSource: Collaboration Beyond Boundaries"</h5>
+                        <p>Georg Grütter is an InnerSource evangelist and Developer Advocate at Robert Bosch. He
+                            co-founded and led the first InnerSource community at Bosch in 2009 and also co-founded the
+                            InnerSource Commons Foundation in 2020. Previously, he held various positions and roles at
+                            Robert Bosch, Line Information, the Zurich System House, and DaimlerChrysler. Georg is
+                            passionate about sharing his enthusiasm for InnerSource and loves to inspire developers and
+                            companies to engage with InnerSource.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="barcamp-info">
+            <div class="barcamp-explanation">
+                <h3>What's a Barcamp? 🤔</h3>
+                <p>It's an <strong>unconference</strong> where YOU create the agenda! Bring topics you want to discuss,
+                    problems you're solving, cool tech you want to share, or <strong>projects you're working
+                        on</strong>. We'll organize sessions on the spot based on what interests everyone.</p>
+
+                <div class="barcamp-format">
+                    <h4>📋 How it works:</h4>
+                    <ul class="format-list">
+                        <li><strong>Propose topics</strong> - Write your idea on a sticky note</li>
+                        <li><strong>Vote & cluster</strong> - We'll group similar topics together</li>
+                        <li><strong>Self-organize</strong> - Choose sessions that interest you most</li>
+                        <li><strong>Share & learn</strong> - Everyone contributes, everyone benefits</li>
+                    </ul>
+                </div>
+
+                <div class="topic-clusters">
+                    <h4>🗂️ Topic Clusters (suggest your own!):</h4>
+
+                    <div class="cluster-grid">
+                        <div class="cluster-category">
+                            <h5>🔧 DevOps & Infrastructure</h5>
+                            <ul>
+                                <li>CI/CD pipeline optimization</li>
+                                <li>Infrastructure as Code</li>
+                                <li>Monitoring & observability</li>
+                                <li>Container orchestration</li>
+                            </ul>
+                        </div>
+
+                        <div class="cluster-category">
+                            <h5>🎨 Frontend & UX</h5>
+                            <ul>
+                                <li>Modern framework comparisons</li>
+                                <li>Performance optimization</li>
+                                <li>Accessibility best practices</li>
+                                <li>Design system implementation</li>
+                            </ul>
+                        </div>
+
+                        <div class="cluster-category">
+                            <h5>⚙️ Backend & APIs</h5>
+                            <ul>
+                                <li>Microservices architecture</li>
+                                <li>Database performance tuning</li>
+                                <li>API design patterns</li>
+                                <li>Event-driven architectures</li>
+                            </ul>
+                        </div>
+
+                        <div class="cluster-category">
+                            <h5>☁️ Cloud & Platform</h5>
+                            <ul>
+                                <li>Cloud migration strategies</li>
+                                <li>Serverless architectures</li>
+                                <li>Multi-cloud approaches</li>
+                                <li>Cost optimization</li>
+                            </ul>
+                        </div>
+
+                        <div class="cluster-category">
+                            <h5>🏗️ Architecture & Design</h5>
+                            <ul>
+                                <li>System design patterns</li>
+                                <li>Legacy system modernization</li>
+                                <li>Domain-driven design</li>
+                                <li>Technical debt management</li>
+                            </ul>
+                        </div>
+
+                        <div class="cluster-category">
+                            <h5>🤖 AI & Data</h5>
+                            <ul>
+                                <li>ML in engineering workflows</li>
+                                <li>Data pipeline architectures</li>
+                                <li>AI-assisted development</li>
+                                <li>Analytics & insights</li>
+                            </ul>
+                        </div>
+
+                        <div class="cluster-category">
+                            <h5>🔒 Security & Quality</h5>
+                            <ul>
+                                <li>Security in development</li>
+                                <li>Testing strategies</li>
+                                <li>Code quality practices</li>
+                                <li>Vulnerability management</li>
+                            </ul>
+                        </div>
+
+                        <div class="cluster-category">
+                            <h5>🚀 Project Showcase</h5>
+                            <ul>
+                                <li>Share your current projects</li>
+                                <li>Get feedback & ideas</li>
+                                <li>Find collaboration partners</li>
+                                <li>Demo cool solutions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bring-projects">
+                    <h4>💡 Bring Your Projects!</h4>
+                    <p>Got something cool you're working on? A problem you're stuck on? A solution you're proud of?
+                        <strong>Share it!</strong> Barcamp sessions are perfect for:
+                    </p>
+                    <ul class="project-ideas">
+                        <li>🔍 <strong>Problem-solving sessions</strong> - Get help from the community</li>
+                        <li>🎯 <strong>Project demos</strong> - Show off your latest work</li>
+                        <li>🤝 <strong>Collaboration opportunities</strong> - Find teammates for your ideas</li>
+                        <li>📚 <strong>Knowledge sharing</strong> - Teach others what you've learned</li>
+                        <li>🔄 <strong>Code reviews</strong> - Get fresh perspectives on your code</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="easter-eggs">
+            <div class="konami-hint">
+                <p>Psst... try the Konami code for a surprise! ↑↑↓↓←→←→BA</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>
+                <span class="code-comment">// Built by ÖBB engineers, for ÖBB engineers ❤️</span>
+            </p>
+            <div class="footer-ascii">
+                <pre>
+    const community = new ÖBBTechCommunity();
+    while(community.isGrowing()) {
+        engineers.forEach(member => {
+            member.share();
+            member.learn();
+            member.connect();
+        });
+    }
+                </pre>
+            </div>
+        </div>
+    </footer>
+
+    <div class="matrix-bg"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
