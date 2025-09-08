@@ -229,31 +229,8 @@ function handleRegistration(e) {
     }, 1500);
 }
 
-// Add event listeners to both register buttons
-function handleHeroRegistration(e) {
-    e.preventDefault();
-
-    // Show a fun loading message first
-    const btn = e.target.closest('.hero-register-btn');
-    const originalText = btn.querySelector('.btn-text').innerHTML;
-
-    btn.querySelector('.btn-text').innerHTML = '<code>git push origin registration...</code>';
-    btn.style.pointerEvents = 'none';
-
-    setTimeout(() => {
-        // Uncomment the next line and add your registration URL
-        // window.open(REGISTRATION_URL, '_blank');
-
-        // For demo purposes, show a message
-        showNotification('Registration link would open here! 🚀');
-
-        btn.querySelector('.btn-text').innerHTML = originalText;
-        btn.style.pointerEvents = 'auto';
-    }, 1500);
-}
-
 document.getElementById('registerBtn').addEventListener('click', handleRegistration);
-document.getElementById('heroRegisterBtn').addEventListener('click', handleHeroRegistration);
+document.getElementById('heroRegisterBtn').addEventListener('click', handleRegistration);
 
 // Terminal typing effect
 function typeInTerminal() {
