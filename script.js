@@ -207,7 +207,7 @@ function showNotification(message) {
 }
 
 // Registration URL - update this when you have the actual link
-const REGISTRATION_URL = 'https://your-registration-link.com';
+const REGISTRATION_URL = 'https://events.teams.microsoft.com/event/c8c8e879-d177-4c89-a94a-b12e7c4e941f@085c0b65-6a84-4006-851e-5faa7ec5367e';
 
 // Register button functionality
 function handleRegistration(e) {
