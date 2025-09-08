@@ -222,10 +222,7 @@ function handleRegistration(e) {
 
     setTimeout(() => {
         // Uncomment the next line and add your registration URL
-        // window.open(REGISTRATION_URL, '_blank');
-
-        // For demo purposes, show a message
-        showNotification('Registration link would open here! 🚀');
+        window.open(REGISTRATION_URL, '_blank');
 
         btn.querySelector('.btn-text').innerHTML = originalText;
         btn.style.pointerEvents = 'auto';
