@@ -122,7 +122,7 @@ message.innerHTML = `
            ">
                <p style="color: #f0f6fc; font-size: 1rem; line-height: 1.4;">${randomJoke}</p>
            </div>
-           <p style="color: #7d8590; font-size: 0.9rem;">console.log('Welcome to the ÖBB Tech Community!');</p>
+           <p style="color: #7d8590; font-size: 0.9rem;">console.log('Welcome to the ÖBB dev-corner!');</p>
            <button onclick="this.parentElement.parentElement.remove()" style="
                margin-top: 20px;
                padding: 12px 25px;
@@ -207,7 +207,7 @@ setTimeout(() => notification.remove(), 300);
 }
 
 // Registration URL - update this when you have the actual link
-const REGISTRATION_URL = 'https://events.teams.microsoft.com/event/c8c8e879-d177-4c89-a94a-b12e7c4e941f@085c0b65-6a84-4006-851e-5faa7ec5367e';
+const REGISTRATION_URL = 'https://events.teams.microsoft.com/event/09c51c9e-1cef-4cc0-897a-866017475646@085c0b65-6a84-4006-851e-5faa7ec5367e';
 
 // Register button functionality
 function handleRegistration(e) {
@@ -295,7 +295,7 @@ createMatrixRain();
 typeInTerminal();
 
 // Add some random console messages for fun
-console.log('%c🚂 Welcome to ÖBB Tech Community!', 'color: #00ff41; font-size: 16px; font-weight: bold;');
+console.log('%c🚂 Welcome to ÖBB dev-corner!', 'color: #00ff41; font-size: 16px; font-weight: bold;');
 console.log('%cLooks like someone knows how to use dev tools! 😎', 'color: #ff6b35;');
 console.log('%cFirst meetup on 24.10 - be part of history!', 'color: #7d8590;');
 console.log('%cTry the Konami code: ↑↑↓↓←→←→BA', 'color: #7d8590;');
@@ -304,7 +304,7 @@ console.log('%cTry the Konami code: ↑↑↓↓←→←→BA', 'color: #7d8590
 // Fun console commands
 window.oebb = {
 join: () => {
-console.log('%c✓ Joining ÖBB Tech Community!', 'color: #00ff41;');
+console.log('%c✓ Joining ÖBB dev-corner Community!', 'color: #00ff41;');
 document.getElementById('registerBtn').click();
 },
 
@@ -323,7 +323,7 @@ console.log('%c🎯 Ready! What topic will you propose?', 'color: #00ff41;');
 },
 
 community: () => {
-console.log('%c🚂 ÖBB Tech Community - Built by engineers, for engineers!', 'color: #00ff41;');
+console.log('%c🚂 ÖBB dev-corner - Built by engineers, for engineers!', 'color: #00ff41;');
 },
 
 help: () => {
